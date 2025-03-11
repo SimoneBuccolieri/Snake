@@ -1,8 +1,8 @@
 <template>
-  <div id="app">
+  <div id="app" class="container mx-auto py-8 flex justify-center flex-col h-screen">
     <div v-if="playBtn">
-      <h1>Snake</h1>
-      <button @click="play">Play</button>
+      <h1 class="bold text-4xl">Snake</h1>
+      <button @click="play" class=" text-4xl rounded bg-green-600 text-white py-1 px-4 m-8 hover:bg-green-500">Play</button>
     </div>
     <div>
       <div v-if="!gameOver && !playBtn">
@@ -18,8 +18,8 @@
       ></canvas>
     </div>
     <div v-if="gameOver" class="game-over">
-      <h2>Game Over</h2>
-      <button @click="reset">Play Again</button>
+      <h2 class="bold text-4xl">Game Over</h2>
+      <button @click="reset" class="  rounded bg-green-600 text-white px-2 m-8 hover:bg-green-500">Play Again</button>
     </div>
   </div>
 </template>
@@ -38,7 +38,7 @@ export default {
         x: [100],
         y: [100],
         radius: 8,
-        color: 'red',
+        color: 'blue',
         direction: 'right',
         length: 5,
       },
@@ -46,7 +46,7 @@ export default {
         x: null,
         y: null,
         radius: 10,
-        color: 'blue',
+        color: 'red',
         presenza: false,
       },
       touchStartX: 0,
@@ -158,7 +158,7 @@ export default {
     },
 
     drawGame(ctx) {
-      ctx.fillStyle = 'lightgreen';
+      ctx.fillStyle = 'green';
       ctx.fillRect(0, 0, this.canvawidth, this.canvaheight);
     },
 
