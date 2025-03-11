@@ -6,7 +6,7 @@ Un classico gioco **Snake** creato con **Vue.js**! Controlla il serpente, mangia
 🔗 [Gioca ora](https://snake.simonebuccolieri.com) 
 
 ## 📸 Screenshot
-![Snake Vue.js Screenshot](https://github.com/simonebuccolieri/Snake/public/screenshot.png)  
+![Snake Vue.js Screenshot](https://github.com/SimoneBuccolieri/Snake/blob/master/public/screenshot.png)  
 
 ## 📦 Installazione e Avvio
 
